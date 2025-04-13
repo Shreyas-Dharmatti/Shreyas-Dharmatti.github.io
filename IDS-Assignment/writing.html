@@ -81,23 +81,7 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 body {
-  background-color: #f0f8ff; /* light blue background */
-  font-family: "Segoe UI", sans-serif;
-}
-
-h1, h2, h3 {
-  color: #333;
-}
-
-code {
-  background-color: #e6e6e6;
-  padding: 2px 4px;
-  border-radius: 4px;
-}
-</style>
-<style>
-body {
-  background-color: #f0f8ff; /* light blue background */
+  background-color: red; /* light blue background */
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -114,7 +98,7 @@ code {
 <p>The dataset contains electricity usage data for various Indian states, recorded across different dates. Each row represents a state’s usage at a specific timestamp, along with its geographical coordinates (latitude and longitude) and its corresponding region (like NR for North Region). The dataset includes 16,599 entries across 6 columns. The Usage column holds the power consumption values, while the Dates column indicates the timestamp in DD/MM/YYYY HH:MM:SS format.</p>
 <p>Data is in the form of a time series for a period of 17 months beginning from 2nd Jan 2019 till 23rd May 2020.</p>
 <p>Below is the first 10 samples from the dataset.</p>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.116673Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.116190Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.153521Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.151976Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.116640Z&quot;}}" data-trusted="true" data-execution_count="6">
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.116673Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.116190Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.153521Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.151976Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.116640Z&quot;}}" data-trusted="true" data-execution_count="6">
 <div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
@@ -228,7 +212,7 @@ code {
 </div>
 </div>
 </div>
-<div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.175894Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.175467Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.197630Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.196412Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.175846Z&quot;}}" data-trusted="true" data-execution_count="14">
+<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.175894Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.175467Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.197630Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.196412Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.175846Z&quot;}}" data-trusted="true" data-execution_count="14">
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of Null Values in these columns:
 </code></pre>
@@ -246,7 +230,7 @@ dtype: int64</code></pre>
 <section id="univariate-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="univariate-analysis">Univariate Analysis</h3>
 <p>Lets look at data distribution across all the 33 states present in the dataset</p>
-<div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.252807Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.252502Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.694894Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.693700Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.252780Z&quot;}}" data-trusted="true" data-execution_count="17">
+<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.252807Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.252502Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.694894Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.693700Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.252780Z&quot;}}" data-trusted="true" data-execution_count="17">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -256,7 +240,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>Now, lets look at the data distribution across the 5 regions</p>
-<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.696604Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.696243Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.841528Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.840218Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.696570Z&quot;}}" data-trusted="true" data-execution_count="18">
+<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.696604Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.696243Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:26.841528Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:26.840218Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.696570Z&quot;}}" data-trusted="true" data-execution_count="18">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -266,7 +250,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>Now lets focus on how many states are present in each region</p>
-<div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.843226Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.842812Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.082901Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.081856Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.843187Z&quot;}}" data-trusted="true" data-execution_count="21">
+<div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:26.843226Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:26.842812Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.082901Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.081856Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:26.843187Z&quot;}}" data-trusted="true" data-execution_count="21">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -276,7 +260,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>Following are stats for the <strong>Usage</strong> columns in the dataset</p>
-<div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.084348Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.083835Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.104738Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.100826Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.084315Z&quot;}}" data-trusted="true" data-execution_count="22">
+<div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.084348Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.083835Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.104738Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.100826Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.084315Z&quot;}}" data-trusted="true" data-execution_count="22">
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>count    16587.000000
 mean       103.072539
@@ -289,7 +273,7 @@ max        522.100000
 Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
-<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.106447Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.105833Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.299891Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.298580Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.106313Z&quot;}}" data-trusted="true" data-execution_count="28">
+<div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.106447Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.105833Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.299891Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.298580Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.106313Z&quot;}}" data-trusted="true" data-execution_count="28">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -299,7 +283,7 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 <p>Here is the date distribution which the dataset follows, important note here is that not all days are included in the time period mentioned, there are some days for which no data is logged</p>
-<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.309212Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.308861Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.342830Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.341727Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.309184Z&quot;}}" data-trusted="true" data-execution_count="31">
+<div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.309212Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.308861Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.342830Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.341727Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.309184Z&quot;}}" data-trusted="true" data-execution_count="31">
 <div class="cell-output cell-output-stdout">
 <pre><code>Data start date: 2019-01-02 00:00:00
 Data ends end: 2020-12-05 00:00:00
@@ -310,7 +294,7 @@ Total days for which data is logged: 703 days 00:00:00</code></pre>
 <section id="bivariate-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="bivariate-analysis">Bivariate Analysis</h3>
 <p>Now lets focus on average usage according to regions</p>
-<div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.344387Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.343980Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.600208Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.599196Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.344330Z&quot;}}" data-trusted="true" data-execution_count="32">
+<div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.344387Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.343980Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.600208Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.599196Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.344330Z&quot;}}" data-trusted="true" data-execution_count="32">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -320,7 +304,7 @@ Total days for which data is logged: 703 days 00:00:00</code></pre>
 </div>
 </div>
 <p>Next, we will see on average power usage for each state</p>
-<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.601549Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.601183Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.614137Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.612867Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.601517Z&quot;}}" data-trusted="true" data-execution_count="33">
+<div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.601549Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.601183Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:27.614137Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:27.612867Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.601517Z&quot;}}" data-trusted="true" data-execution_count="33">
 <div class="cell-output cell-output-display" data-execution_count="33">
 <pre><code>States
 Maharashtra          431.570179
@@ -360,13 +344,13 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 <p>Lets look at the mean usage of each state with thier locations on the map</p>
-<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.615449Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.615124Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:28.405920Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:28.404697Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.615422Z&quot;}}" data-trusted="true" data-execution_count="42">
+<div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:27.615449Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:27.615124Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:28.405920Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:28.404697Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:27.615422Z&quot;}}" data-trusted="true" data-execution_count="42">
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_42.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 <p>Let focus on top 10 states which consume maximum energy</p>
-<div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:28.407667Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:28.407304Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:28.718105Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:28.716865Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:28.407637Z&quot;}}" data-trusted="true" data-execution_count="35">
+<div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:28.407667Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:28.407304Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:28.718105Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:28.716865Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:28.407637Z&quot;}}" data-trusted="true" data-execution_count="35">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -376,7 +360,7 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 <p>Now lets look at India as a whole and see how the mean usage varied throughtout the entire period</p>
-<div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:28.719536Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:28.719176Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:29.102043Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:29.100647Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:28.719504Z&quot;}}" data-trusted="true">
+<div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:28.719536Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:28.719176Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:29.102043Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:29.100647Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:28.719504Z&quot;}}" data-trusted="true">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -385,13 +369,13 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:29.113645Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:29.113297Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:29.230707Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:29.229174Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:29.113616Z&quot;}}" data-trusted="true" data-execution_count="39">
+<div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:29.113645Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:29.113297Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:29.230707Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:29.229174Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:29.113616Z&quot;}}" data-trusted="true" data-execution_count="39">
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_39.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 <p>Lets now look at the correlation matrix for usage latitude and longitude</p>
-<div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:29.232272Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:29.231924Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.160184Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.158888Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:29.232241Z&quot;}}" data-trusted="true" data-execution_count="43">
+<div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:29.232272Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:29.231924Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.160184Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.158888Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:29.232241Z&quot;}}" data-trusted="true" data-execution_count="43">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -401,7 +385,7 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 <p>Now let us look at if there are any outliers present in the usage column, and if then in which states</p>
-<div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:30.161836Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:30.161249Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.178315Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.177116Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:30.161804Z&quot;}}" data-trusted="true" data-execution_count="44">
+<div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:30.161836Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:30.161249Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.178315Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.177116Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:30.161804Z&quot;}}" data-trusted="true" data-execution_count="44">
 <div class="cell-output cell-output-stdout">
 <pre><code>            States  Usage
 5424   Maharashtra  522.1
@@ -421,7 +405,7 @@ Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
 <p>From the above analysis we can cleary see that there exist around 314 outliers, but the interesting point is that they exist only in Maharashtra and UP, and the outlier values are high. this can due to fact that the population is very high in both these states, thus having high values of usage is quite justified compared to the other values</p>
-<div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:30.189325Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:30.188911Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.265561Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.264275Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:30.189283Z&quot;}}" data-trusted="true">
+<div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-04-13T13:02:30.189325Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-04-13T13:02:30.188911Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-04-13T13:02:30.265561Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-04-13T13:02:30.264275Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-04-13T13:02:30.189283Z&quot;}}" data-trusted="true">
 <div class="cell-output cell-output-stdout">
 <pre><code>Monthly Usage Statistics (Grouped by State and Month):
 
