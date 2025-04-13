@@ -420,6 +420,56 @@ max      488.940000
 Name: Usage, dtype: float64</code></pre>
 </div>
 </div>
+<hr>
+<p><strong>Next we try to see the seasonal variation in usage in India using the ANOVA Test</strong></p>
+<p>Objective The goal of this analysis is to determine if there is a <strong>statistically significant difference</strong> in electricity usage across different seasons in India.</p>
+<p>In here we are assuming the four seasons, as it is widely well known in India:</p>
+<p><strong>Winter</strong>: Decemeber, January, February</p>
+<p><strong>Summer</strong>: March, April, May</p>
+<p><strong>Monsoon</strong>: June, July, August</p>
+<p><strong>Post-Monsoon</strong>: September, October, Novemeber.</p>
+<p>This is a generalisation of seasons, of course there are places in India, wherein, maybe the mentioned seasonal variation is not followed, but as a whole for India, this is a good way to divide the seasons.</p>
+<p>We will be testing the following hypotheses using <strong>One-Way ANOVA</strong>:</p>
+<p><strong>Null Hypothesis (H₀)</strong>: Mean electricity usage is the same across all seasons.</p>
+<p><strong>Alternative Hypothesis (H₁)</strong>: At least one season has a different mean electricity usage.</p>
+<p><em>(We would be using a p-value of 0.05)</em></p>
+<div id="cell-46" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-stdout">
+<pre><code>ANOVA Test Result:
+F-statistic: 0.1816
+p-value: 0.9090</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-28-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-28-output-3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="test-output" class="level3">
+<h3 class="anchored" data-anchor-id="test-output">Test Output:</h3>
+<ul>
+<li><strong>F-statistic</strong>: 0.1816 (Ratio of variance between group means to variance within the groups)</li>
+<li><strong>p-value</strong>: 0.9090 (Probability that the observed differences could have occurred by chance under the null hypothesis.)</li>
+</ul>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion:</h3>
+<ul>
+<li>If <em>p-value &lt; 0.05</em>: Reject the null hypothesis ⇒ electricity usage <em>does</em> vary by season.</li>
+<li>If <em>p-value ≥ 0.05</em>: Fail to reject the null hypothesis ⇒ no significant seasonal variation in usage.</li>
+</ul>
+<p><strong>Since our p-value is very high compared to 0.05 we fail to reject the null hypothesis. There is no significant variation in usage as seasons change in India</strong></p>
+<hr>
 </section>
 
 </main>
