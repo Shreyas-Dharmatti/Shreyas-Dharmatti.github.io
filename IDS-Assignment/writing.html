@@ -474,6 +474,48 @@ p-value: 0.9090</code></pre>
 </ul>
 <p><strong>Since our p-value is very high compared to 0.05 we fail to reject the null hypothesis. There is no significant variation in usage as seasons change in India</strong></p>
 <hr>
+<p><strong>Next Next we determine if there’s a statistically significant difference in power usage between weekdays and weekends using t-test</strong></p>
+<p>We will be testing the following hypotheses using <strong>T-test</strong>:</p>
+<p><strong>Null Hypothesis (H₀):</strong> Average power usage on weekdays equals weekends.<br>
+<strong>Alternative Hypothesis (H₁):</strong> Average power usage differs between weekdays and weekends.</p>
+<p><em>(We would be using a p-value of 0.05)</em></p>
+<div id="cell-50" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-stdout">
+<pre><code>T-Test Result (Weekday vs Weekend):
+T-statistic: -0.0068
+P-value: 0.9945</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-29-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-29-output-3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="test-output-1" class="level3">
+<h3 class="anchored" data-anchor-id="test-output-1">Test Output:</h3>
+<ul>
+<li><strong>T-statistic</strong>: -0.0068</li>
+<li><strong>p-value</strong>: 0.9945</li>
+</ul>
+</section>
+<section id="conclusion-1" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-1">Conclusion:</h3>
+<ul>
+<li>If <em>p-value &lt; 0.05</em>: Reject the null hypothesis ⇒ electricity usage is same on the weekday and weekend.</li>
+<li>If <em>p-value ≥ 0.05</em>: Fail to reject the null hypothesis ⇒ No statistically significant difference found between weekday and weekend usage</li>
+</ul>
+<p><strong>Since our p-value is very high compared to 0.05 we fail to reject the null hypothesis. There is no significant difference in weekday and weekend usage</strong></p>
+<hr>
 </section>
 
 </main>
