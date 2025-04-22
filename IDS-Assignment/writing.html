@@ -589,6 +589,74 @@ group1 group2 meandiff p-adj  lower    upper   reject
 <p><strong>Since our p-value is much lower than 0.05, we reject the null hypothesis.<br>
 There is a statistically significant difference in electricity usage across different regions. We can also see that for every region there is a statistical difference from each other, goes on to say that no two regions have the same mean power usage</strong></p>
 <hr>
+<p><strong>Next we determine if there’s a statistically significant difference in power usage between two specific periods using an Independent Two-Sample t-test</strong></p>
+<p>We will be testing the following hypotheses using <strong>Two-sample t-test</strong>:</p>
+<p><strong>Null Hypothesis (H₀):</strong> There is no difference in average power usage between the two periods.<br>
+<strong>Alternative Hypothesis (H₁):</strong> There is a difference in average power usage between the two periods.</p>
+<p><em>(We would be using a p-value threshold of 0.05)</em></p>
+<div id="cell-57" class="cell" data-execution_count="16">
+<div class="cell-output cell-output-stdout">
+<pre><code>Lockdown Period Statistics (2020) vs Non-lockdown Period (2019):
+
+2020 Lockdown Period:
+count    2079.000000
+mean      100.439490
+std       113.730868
+min         0.800000
+25%         6.700000
+50%        64.200000
+75%       169.950000
+max       500.400000
+Name: Usage, dtype: float64
+
+2019 Non-lockdown Period:
+count    8910.000000
+mean      102.299989
+std       115.232474
+min         0.500000
+25%         6.600000
+50%        64.350000
+75%       172.200000
+max       522.100000
+Name: Usage, dtype: float64
+
+T-Test Result (2020 Lockdown vs 2019 Non-lockdown Usage):
+T-statistic: -0.6700
+P-value: 0.5029</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-32-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="writing_files/figure-html/cell-32-output-3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="test-output-3" class="level3">
+<h3 class="anchored" data-anchor-id="test-output-3">Test Output:</h3>
+<ul>
+<li><strong>T-statistic</strong>: -0.6700<br>
+</li>
+<li><strong>p-value</strong>: 0.5029</li>
+</ul>
+</section>
+<section id="conclusion-3" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-3">Conclusion:</h3>
+<ul>
+<li>If <em>p-value &lt; 0.05</em>: Reject the null hypothesis ⇒ Significant difference exists between the periods.</li>
+<li>If <em>p-value ≥ 0.05</em>: Fail to reject the null hypothesis ⇒ No statistically significant difference between the periods.</li>
+</ul>
+<p><strong>Since our p-value is greater than 0.05, we fail to reject the null hypothesis.<br>
+There is no statistically significant difference in electricity usage between the two periods. This indicates that, on average, the usage levels are similar across these periods.</strong></p>
+<hr>
 </section>
 
 </main>
